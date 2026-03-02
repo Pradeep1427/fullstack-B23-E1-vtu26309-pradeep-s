@@ -1,0 +1,68 @@
+/* Nature background */
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(to right, #56ab2f, #a8e063);
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+/* Headings */
+h1 {
+color: #0b6623;
+margin-top: 20px;
+}
+
+h6, p {
+color: #1b4332;
+}
+
+/* Nature card form */
+table {
+background-color: #f1fff1;
+margin: auto;
+border-radius: 15px;
+padding: 20px;
+border: 2px solid #4caf50;
+box-shadow: 0 6px 12px rgba(0,100,0,0.3);
+}
+
+/* Table cells */
+td {
+padding: 12px;
+font-size: 16px;
+color: #064e3b;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+width: 230px;
+padding: 8px;
+border-radius: 8px;
+border: 1px solid #81c784;
+outline: none;
+}
+
+/* Focus effect */
+input:focus {
+border-color: #2e7d32;
+box-shadow: 0 0 5px #66bb6a;
+}
+
+/* Submit button */
+input[type="submit"] {
+background-color: #2e7d32;
+color: white;
+padding: 10px 22px;
+border: none;
+border-radius: 25px;
+cursor: pointer;
+font-size: 15px;
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+background-color: #1b5e20;
+}
