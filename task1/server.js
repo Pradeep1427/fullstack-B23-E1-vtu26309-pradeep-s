@@ -1,15 +1,17 @@
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
+// load environment variables from .env file
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'virat'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '',
+    database: process.env.DB_NAME || 'virat'
 });
 
 db.connect(err => {
